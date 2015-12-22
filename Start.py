@@ -1,6 +1,7 @@
-import ImageFinder
 import glob
+import ImageFinderBing
 
-for i in glob.glob("/home/andre/PycharmProjects/ImageFinder/roms/*.smc"):
-    print i.split('/')[-1]
-    ImageFinder.getImage(i.split('/')[-1], "snes", ".smc")
+for i in glob.glob("/media/andre/14E733B34DA5E097/MaximusArcade/Emuladores/visualpimbal/Tables/*/*.vpt"):
+    print("Baixando: " + i.split('/')[-1]+ "....   "),
+    ImageFinderBing.getImage(i.split('/')[-1], "pinbal", ".vpt")
+
